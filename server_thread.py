@@ -1,7 +1,11 @@
 import sys
 import socket
-import selectors
+#import selectors
 import types
+
+from multiprocessing import Queue
+import threading
+
 
 keywords = ['/exit',
             '/nick',
